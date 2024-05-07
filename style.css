@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     font-family: 'gabarito', sans-serif;
 
 }
+
 .navbar {
     padding: 10px;
     display: flex;
@@ -20,7 +22,7 @@ body{
 }
 
 .navbar__s1__title {
-    color:  #A435F0;
+    color: #A435F0;
 }
 
 .navbar__s2 {
@@ -49,25 +51,29 @@ body{
     align-items: center;
 
 }
-.navbar__s4{
+
+.navbar__s4 {
     display: none;
 }
+
 /* My learning popup*/
-.mylearning{
+.mylearning {
     position: relative;
     cursor: pointer;
 }
-.mylearning__popup{
-position: absolute;
-background-color: white;
-border: solid black 1px;
-width: 100px;
-top: 150%;
-padding: 20px;
-display: none;
+
+.mylearning__popup {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    top: 150%;
+    padding: 20px;
+    display: none;
 
 }
-.mylearning:hover .mylearning__popup{
+
+.mylearning:hover .mylearning__popup {
     display: block;
 }
 
@@ -86,7 +92,8 @@ display: none;
     cursor: pointer;
     border: solid #A435F0 1px;
 }
-.categories p:hover{
+
+.categories p:hover {
     transition: 1s;
     background-color: transparent;
     color: black;
@@ -94,14 +101,15 @@ display: none;
 
 }
 
-.sale-image{
+.sale-image {
     position: relative;
 }
 
 .sale-image img {
     width: 100%;
 }
-.sale-image__offer{
+
+.sale-image__offer {
     width: 35%;
     border: solid black 2px;
     background-color: white;
@@ -114,12 +122,14 @@ display: none;
     opacity: 0;
     animation-fill-mode: forwards;
 }
-@keyframes zoom{
-    0%{
+
+@keyframes zoom {
+    0% {
         transform: scale(0);
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
         transform: scale(1);
     }
@@ -127,8 +137,14 @@ display: none;
 
 .recommended__container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+.recommended {
+    padding: 10px;
 }
 
 .course-card {
@@ -137,11 +153,9 @@ display: none;
     margin: 5px;
 }
 
-.recommended {
-    padding: 10px;
-}
 
 .course-card img {
+   height: 50%;
     width: 100%;
 }
 
@@ -197,14 +211,16 @@ display: none;
     display: flex;
     justify-content: space-between;
 }
+
 /* media queries*/
-@media  screen and(max-width:800px) {
+
+@media screen and (max-width:800px) {
     body{
         font-size: 10px;
     }
-    
 }
-@media  screen and(max-width:600px) {
+
+@media screen and (max-width:600px){
     .course-card{
         flex-basis: 40%;
     }
@@ -217,5 +233,5 @@ display: none;
     .navbar__s4{
         display: block;
     }
-    }
-    
+}
+
